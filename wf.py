@@ -12,16 +12,11 @@ def main():
     rows = ws.max_row
     cols = ws.max_column
 
-    # 字体
-    font1 = Font(name='微软雅黑', size=11, b=True)
-    font2 = Font(name='微软雅黑', size=11)
 
-    # 边框
-    line_t = Side(style='thin', color='000000')  # 细边框
-    line_m = Side(style='medium', color='000000')  # 粗边框
+    line_t = Side(style='thin', color='000000')  
+    line_m = Side(style='medium', color='000000')  
     border0 = Border(right=line_t)
     border1 = Border(top=line_m, bottom=line_t, left=line_t, right=line_t)
-    # 与标题相邻的边设置与标题一样
     border2 = Border(top=line_t, bottom=line_t, left=line_t, right=line_t)
 
     # fill = PatternFill('solid', fgColor='CFCFCF')
